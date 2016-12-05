@@ -1,0 +1,51 @@
+---
+layout: base
+permalink: /
+---
+
+<header>
+  <div class="p-y b-head text-center">
+    <div class="container">
+      <p class="pull-right">+7 (499) 112-47-92</p>
+      <p>{{ site.name }}</p>
+    </div>
+
+    <div class="container m-y-lg">
+      <h1 class="m-y b-head__title">Приведём покупателей в&nbsp;вашу турфирму</h1>
+      <img src="/images/logo.jpg"/>
+    </div>
+  </div> <!-- /.b-head -->
+</header> 
+
+<footer>
+  <div class="block b-footer m-t-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <p>+7 (499) 112-47-92</p>
+          <p>hi@tur.im</p>
+        </div>
+        <div class="col-md-4">
+          <div id="vk_groups"></div>
+        </div>
+        <div class="col-md-4 col-md-offset-1">
+          <p>ООО Реальность, Санкт-Петербург, ул.&nbsp;Некрасова 40</p>
+          <p><a href="http://soedinennost.com/privacy">Политика конфиденциальности</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?136"></script>
+
+<!-- VK Widget -->
+<div id="vk_community_messages"></div>
+<script type="text/javascript">
+VK.Widgets.CommunityMessages("vk_community_messages", 134671468, {});
+</script>
+
+<!-- VK Widget -->
+<script type="text/javascript">
+VK.Widgets.Group("vk_groups", {mode: 1, width: "auto"}, 134671468);
+</script>

@@ -1,0 +1,24 @@
+baseurl: ""
+url: "http://tur.im"
+markdown: kramdown
+exclude:
+  - node_modules
+  - package.json
+  - README.md
+  - gulpfile.js
+  - deploy
+  - deploy-key.enc
+  - deploy-key
+
+title: "Туристический Интернет Маркетинг"
+description: "Приведём вам клиентов без риска"
+keywords: "реклама, маркетинг, лендинг, бизнес, туризм"
+author: "Николай Воробьёв"
+
+permalink: /:title/
+
+#vk_app_id: 0
+yandex_metrika: 41383369 # tur.im
+google_analytics: UA-46456269-31 # tur.im
+facebook_pixel_id: 1064201373633710
+vk_retarget_url: '//vk.com/rtrg?r=T*5wbKoxMw30WYhkxeLuG1zevj91*zSwbYIbhSfXfhaKxRL7kjPP*xcCReXY8m3vfkfk43DpbTIqmN0RFJVprcRyA5smWiJTXAcnf2kL9pSv5VUDTCgPk6gZ8SQgekp99WL2Vj3FVG5rwOVjoL0lK6XDnxTwiuve0QZucm5xNpg-&pixel_id=1000050705'
