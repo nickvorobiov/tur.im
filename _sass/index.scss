@@ -52,7 +52,7 @@ h6,.h6 {
   }
 }
 
-.b-odd, .b-footer {
+.b-odd, .b-footer, .b-head {
   background-color: #efefef;
 }
 
@@ -73,4 +73,40 @@ h6,.h6 {
 .form-well {
   background: white;
   padding: 20px;
+}
+
+.b-what__number {
+  font-size: 150px;
+  color: #E4E4E4;
+  font-weight: 900; }
+
+.b-what__quote {
+  font-family: 'Helvetica Light', 'Helvetica';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  border: 16px solid transparent;
+  -moz-border-image: -moz-linear-gradient(top left, #3acfd5 0%, #3a4ed5 100%);
+  -webkit-border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #3a4ed5 100%);
+  border-image: linear-gradient(to bottom right, #3acfd5 0%, #3a4ed5 100%);
+  border-image-slice: 1; }
+
+.b-scheme__number {
+  font-size: 72px;
+  color: #E4E4E4;
+  font-weight: 900;
+  line-height: 1;
+  position: absolute;
+  margin: -15px 0 0 -50px;
+}
+
+.b-decision__number {
+  font-size: 72px;
+  color: #E24740;
+  font-weight: 900;
+  line-height: 1; 
+}
+
+img {
+  max-width: 100%;
 }
