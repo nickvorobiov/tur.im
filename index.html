@@ -193,15 +193,7 @@ permalink: /
         </div>
         <div class="col-md-5 col-md-offset-1">
           <p>Чтобы записаться на&nbsp;интервью, заполните форму</p>
-          <form method="post" action="http://bot.nickvorobiov.com/amo-order.php" data-toggle="validator">
-            <input type="hidden" name="redirect" value="http://tur.im/ok/" />
-            <div class="help-block with-errors"></div>
-            <div class="form-group">
-              <label for="modal-input-phone" class="control-label">Телефон</label>
-              <input id="modal-input-phone" required="required" name="phone" type="text" class="form-control" placeholder="+7 (921) 765-43-21">
-            </div>
-            <button type="submit" class="btn btn-primary btn-block b-join__button">Жду звонка</button>
-          </form>
+          {% include form.html %}
         </div>
       </div>
     </div>
@@ -269,15 +261,7 @@ permalink: /
         <h4 class="modal-title">Обсудить сотрудничество по&nbsp;привлечению клиентов в турфирму</h4>
       </div>
       <div class="modal-body">
-        <form method="post" action="http://bot.nickvorobiov.com/amo-order.php" data-toggle="validator">
-          <input type="hidden" name="redirect" value="http://tur.im/ok/" />
-          <div class="help-block with-errors"></div>
-          <div class="form-group">
-            <label for="modal-input-phone" class="control-label">Телефон</label>
-            <input id="modal-input-phone" required="required" name="phone" type="text" class="form-control" placeholder="+7 (921) 765-43-21">
-          </div>
-          <button type="submit" class="btn btn-primary btn-block b-join__button">Жду звонка</button>
-        </form>
+        {% include form.html %}
       </div>
     </div>
   </div>
