@@ -193,26 +193,14 @@ permalink: /
         </div>
         <div class="col-md-5 col-md-offset-1">
           <p>Чтобы записаться на&nbsp;интервью, заполните форму</p>
-          <form method="post" class="b-promo__form" action="http://bot.nickvorobiov.com/order.php" data-toggle="validator">
-            <input type="hidden" name="trello-list-id" value="582acb205847831b07120a63" />
-            <input type="hidden" name="redirect" value="http://upakovka.ocheredklientov.com/pay/" />
-            <input type="hidden" name="offer" value="Внести предоплату за старт бизнеса" />
-            <input type="hidden" name="traffic_source" />
-            <input type="hidden" name="roistat" />
+          <form method="post" action="http://bot.nickvorobiov.com/amo-order.php" data-toggle="validator">
+            <input type="hidden" name="redirect" value="http://tur.im/ok/" />
             <div class="help-block with-errors"></div>
             <div class="form-group">
-              <input id="input-name" required="required" name="name" type="text" class="form-control" placeholder="Ваше имя:">
+              <label for="modal-input-phone" class="control-label">Телефон</label>
+              <input id="modal-input-phone" required="required" name="phone" type="text" class="form-control" placeholder="+7 (921) 765-43-21">
             </div>
-            <div class="form-group">
-              <input id="input-company" required="required" name="company" type="text" class="form-control" placeholder="Название вашей компании:">
-            </div>
-            <div class="form-group">
-              <input id="input-city" required="required" name="city" type="text" class="form-control" placeholder="Город:">
-            </div>
-            <div class="form-group">
-              <input id="input-phone" required="required" name="phone" type="text" class="form-control" placeholder="Телефон:">
-            </div>
-            <button type="submit" class="btn btn-primary btn-block b-promo__button">Записаться</button>
+            <button type="submit" class="btn btn-primary btn-block b-join__button">Жду звонка</button>
           </form>
         </div>
       </div>
@@ -281,24 +269,15 @@ permalink: /
         <h4 class="modal-title">Обсудить сотрудничество по&nbsp;привлечению клиентов в турфирму</h4>
       </div>
       <div class="modal-body">
-        <form method="post" action="http://bot.nickvorobiov.com/order.php" data-toggle="validator">
-          <input type="hidden" name="trello-list-id" value="582acb205847831b07120a63" />
-          <input type="hidden" name="redirect" value="http://upakovka.ocheredklientov.com/ok/" />
-          <input type="hidden" name="offer" value="Обсудить сотрудничество по привлечению клиентов в турфирму" />
-          <input type="hidden" name="traffic_source" />
-          <input type="hidden" name="roistat" />
+        <form method="post" action="http://bot.nickvorobiov.com/amo-order.php" data-toggle="validator">
+          <input type="hidden" name="redirect" value="http://tur.im/ok/" />
           <div class="help-block with-errors"></div>
-          <div class="form-group">
-            <label for="modal-input-name" class="control-label">Имя</label>
-            <input id="modal-input-name" required="required" name="name" type="text" class="form-control" placeholder="Иван Иванов">
-          </div>
           <div class="form-group">
             <label for="modal-input-phone" class="control-label">Телефон</label>
             <input id="modal-input-phone" required="required" name="phone" type="text" class="form-control" placeholder="+7 (921) 765-43-21">
           </div>
           <button type="submit" class="btn btn-primary btn-block b-join__button">Жду звонка</button>
         </form>
-        <p class="m-t">Оставь свой телефон и&nbsp;я&nbsp;перезвоню сразу как увижу заявку</p>
       </div>
     </div>
   </div>
