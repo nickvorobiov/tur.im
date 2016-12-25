@@ -12,7 +12,7 @@ permalink: /
           <small class="pull-left p-t-md">Приводим клиентов<br>для турфирм СНГ</small>
         </div>
         <div class="col-sm-6">
-          <h3 class="pull-right m-t-md">+7 (921) 761-85-06</h3>
+          <h3 class="pull-right m-t-md">{{ site.company.phone }}</h3>
         </div>
       </div>
     </div>
@@ -211,9 +211,9 @@ permalink: /
   <div class="container">
     <h2 class="b-mentor__title m-b-lg">Мы&nbsp;знаем туристическую кухню изнутри</h2>
     <div class="row">
-      <div class="col-md-5">
+      <div class="col-md-5 text-center">
         <img src="/images/eugene.jpg" alt="photo" class="b-mentor__image shadow">
-        <p class="m-y-md">Понятов Евгений&nbsp;&mdash; руководитель</p>
+        <p class="m-b-md m-t">Евгений Понятов&nbsp;&mdash; руководитель</p>
       </div>
       <div class="col-md-6 col-md-offset-1">
         <p class="m-b">3&nbsp;года руководил туристическим бизнесом и&nbsp;знает всю кухню изнутри. На&nbsp;своей туристической компании испытал все рекламные каналы. Понимает, какой канал приносит больше прибыли. Последний год занимается маркетингом для туристических компаний.</p>
@@ -250,14 +250,14 @@ permalink: /
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <p>+7 (922) 109-10-02</p>
-          <p>i@tur.im</p>
+          <p>{{ site.company.phone }}</p>
+          <p>{{ site.company.email }}</p>
         </div>
         <div class="col-md-4 m-b">
           <div id="vk_groups"></div>
         </div>
         <div class="col-md-4 col-md-offset-1">
-          <p>ИП Понятов, <nobr>г. Екатеринбург,</nobr> <nobr>ул. Добролюбова, 16</nobr></p>
+          <p>{{ site.company.name }}, <nobr>г. {{ site.company.city }},</nobr> <nobr>{{ site.company.street }}</nobr></p>
           <p><a href="http://soedinennost.com/privacy">Политика конфиденциальности</a></p>
         </div>
       </div>
@@ -265,15 +265,16 @@ permalink: /
   </div>
 </footer>
 
+
 <script type="text/javascript" src="//vk.com/js/api/openapi.js?136"></script>
 
 <!-- VK Widget -->
 <div id="vk_community_messages"></div>
 <script type="text/javascript">
-VK.Widgets.CommunityMessages("vk_community_messages", 134671468, {});
+VK.Widgets.CommunityMessages("vk_community_messages", {{ site.vk_group_id }}, {});
 </script>
 
 <!-- VK Widget -->
 <script type="text/javascript">
-VK.Widgets.Group("vk_groups", {mode: 1, width: "auto"}, 134671468);
+VK.Widgets.Group("vk_groups", {mode: 1, width: "auto"}, {{ site.vk_group_id }});
 </script>
